@@ -1,4 +1,4 @@
-#GUC Tech Tool
+# GUC Tech Tool
 
 This tool was developed on desktop with WPF. It was then ported to Mobile with Xamarin Forms
 
