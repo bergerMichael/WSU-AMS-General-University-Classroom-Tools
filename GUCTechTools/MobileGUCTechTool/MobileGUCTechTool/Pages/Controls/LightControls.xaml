@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+    <!--
+/// This is a sample of the GUCTech Tools developed by Michael Berger and Kyle Avery 
+/// At the Academic Media Services of Washington State University between May 2019 and 
+/// October 2019. All sensitive data has been removed. What remains is a demo of the
+/// project's functionality. Backend integration is not included in this sample.
+    -->    
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileGUCTechTool.Pages.Controls.LightControls"
+			 BackgroundColor="#FF2F2F2F">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="&lt;   Lights   &gt;" HorizontalTextAlignment="Center" 
+			   FontSize="Large" BackgroundColor="#FF2F2F2F"
+			   TextColor="White"/>
+			<Button x:Name="SolarShadesUp" Text="Solar Shades Up" BackgroundColor="Gray" TextColor="White"/>
+            <Button x:Name="SolarShadesDown" Text="Solar Shades Down" BackgroundColor="Gray" TextColor="White"/>
+            <Button x:Name="BlackoutShadesUp" Text="Blackout Shades Up" BackgroundColor="Gray" TextColor="White"/>
+            <Button x:Name="BlackoutShadesDown" Text="Blackout Shades Down" BackgroundColor="Gray" TextColor="White"/>
+            <Button x:Name="LightBank1On"  Text="Light Bank 1 On" BackgroundColor="Gray" TextColor="White"/>
+            <Button x:Name="LightBank1Off" Text="Light Bank 1 Off" BackgroundColor="Gray" TextColor="White"/>
+            <Button x:Name="LightBank2On" Text="Light Bank 2 On" BackgroundColor="Gray" TextColor="White"/>
+            <Button x:Name="LightBank2Off"  Text="Light Bank 2 Off" BackgroundColor="Gray" TextColor="White"/>
+            <Button x:Name="LightBank3On" Text="Light Bank 3 On" BackgroundColor="Gray" TextColor="White"/>
+            <Button x:Name="LightBank3Off" Text="Light Bank 3 Off" BackgroundColor="Gray" TextColor="White"/>
+		</StackLayout>
+    </ContentPage.Content>
+</ContentPage>

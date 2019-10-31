@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+    <!--
+/// This is a sample of the GUCTech Tools developed by Michael Berger and Kyle Avery 
+/// At the Academic Media Services of Washington State University between May 2019 and 
+/// October 2019. All sensitive data has been removed. What remains is a demo of the
+/// project's functionality. Backend integration is not included in this sample.
+    -->    
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileGUCTechTool.Pages.Controls.VCControl"
+			 BackgroundColor="#FF2F2F2F">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="&lt;   VC   &gt;" HorizontalTextAlignment="Center" 
+			   FontSize="Large" BackgroundColor="#FF2F2F2F"
+			   TextColor="White"/>
+			<Button x:Name="vcButtonOn" Text="VC Mode On" BackgroundColor="Gray" TextColor="White"/>
+            <Button x:Name="vcButtonOff" Text="VC Mode Off" BackgroundColor="Gray" TextColor="White"/>
+		</StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,41 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="ProjectorDB" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ProjectorDB">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Building" type="xs:string" minOccurs="0" />
+                <xs:element name="Room" type="xs:string" minOccurs="0" />
+                <xs:element name="IP" type="xs:string" />
+                <xs:element name="ProjNumber" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+      <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//ProjectorDB" />
+        <xs:field xpath="IP" />
+      </xs:unique>
+      <xs:unique name="Constraint2">
+        <xs:selector xpath=".//ProjectorDB" />
+        <xs:field xpath="Building" />
+        <xs:field xpath="Room" />
+        <xs:field xpath="ProjNumber" />
+      </xs:unique>
+    </xs:element>
+  </xs:schema>
+  <ProjectorDB>
+    <Building>SampleBLDG1</Building>
+    <Room>1</Room>
+    <IP>1.2.3.4</IP>
+  </ProjectorDB>
+  <ProjectorDB>
+    <Building>SampleBLDG1</Building>
+    <Room>2</Room>
+    <IP>5.6.7.8</IP>
+  </ProjectorDB>
+</NewDataSet>

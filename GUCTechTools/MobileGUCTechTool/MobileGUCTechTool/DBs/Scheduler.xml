@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="SchedulerIP" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="SchedulerIP">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="IP" type="xs:string" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+      <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//SchedulerIP" />
+        <xs:field xpath="IP" />
+      </xs:unique>
+    </xs:element>
+  </xs:schema>
+  <SchedulerIP>
+    <IP>1.2.3.4</IP>
+  </SchedulerIP>
+</NewDataSet>

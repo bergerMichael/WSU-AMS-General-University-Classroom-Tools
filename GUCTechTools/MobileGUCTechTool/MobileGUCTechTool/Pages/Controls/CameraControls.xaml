@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+    <!--
+/// This is a sample of the GUCTech Tools developed by Michael Berger and Kyle Avery 
+/// At the Academic Media Services of Washington State University between May 2019 and 
+/// October 2019. All sensitive data has been removed. What remains is a demo of the
+/// project's functionality. Backend integration is not included in this sample.
+    -->
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileGUCTechTool.Pages.Controls.CameraControls"
+			 xmlns:Images="clr-namespace:MobileGUCTechTool.Icons"
+			 BackgroundColor="#FF2F2F2F">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="&lt;   Camera   &gt;" HorizontalTextAlignment="Center" 
+			   FontSize="Large" BackgroundColor="#FF2F2F2F"
+			   TextColor="White"/>
+			<Button x:Name="panUpButton" BackgroundColor="Gray" TextColor="White" HorizontalOptions="Center"/>
+			<StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+				<Button x:Name="panLeftButton" BackgroundColor="Gray" TextColor="White" HorizontalOptions="Start"/>
+				<Button x:Name="panRightButton" BackgroundColor="Gray" TextColor="White" HorizontalOptions="End"/>
+			</StackLayout>
+			<Button x:Name="panDownButton" BackgroundColor="Gray" TextColor="White" HorizontalOptions="Center"/>
+				<StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+				<Button x:Name="preset1Call" Text="Preset 1" BackgroundColor="Gray" TextColor="White" HorizontalOptions="FillAndExpand"/>
+                <Button x:Name="preset1Set" Text="Set Preset 1" BackgroundColor="Gray" TextColor="White" HorizontalOptions="FillAndExpand"/>
+			</StackLayout>
+			<StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button x:Name="preset2Call" Text="Preset 2" BackgroundColor="Gray" TextColor="White" HorizontalOptions="FillAndExpand"/>
+                <Button x:Name="preset2Set" Text="Set Preset 2" BackgroundColor="Gray" TextColor="White" HorizontalOptions="FillAndExpand"/>
+			</StackLayout>
+			<StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button x:Name="preset3Call" Text="Preset 3" BackgroundColor="Gray" TextColor="White" HorizontalOptions="FillAndExpand"/>
+                <Button x:Name="preset3Set" Text="Set Preset 3" BackgroundColor="Gray" TextColor="White" HorizontalOptions="FillAndExpand"/>
+			</StackLayout>
+			<StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button x:Name="preset4Call" Text="Preset 4" BackgroundColor="Gray" TextColor="White" HorizontalOptions="FillAndExpand"/>
+                <Button x:Name="preset4Set" Text="Set Preset 4" BackgroundColor="Gray" TextColor="White" HorizontalOptions="FillAndExpand"/>
+			</StackLayout>
+			<Button x:Name="PowerOn" Text="Camera Power On" BackgroundColor="Gray" TextColor="White"/>
+            <Button x:Name="PowerOff" Text="Camera Power Off" BackgroundColor="Gray" TextColor="White"/>
+		</StackLayout>
+    </ContentPage.Content>
+</ContentPage>

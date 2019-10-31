@@ -1,0 +1,138 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <UseShortFileNames>True</UseShortFileNames>
+    <ApplicationIcon />
+    <Win32Resource></Win32Resource>
+</PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ControllerDB.xml" />
+    <None Remove="DBs\ProjectorDB.xml" />
+    <None Remove="DBs\Scheduler.xml" />
+    <None Remove="Icons\arrowDown.png" />
+    <None Remove="Icons\arrowLeft.png" />
+    <None Remove="Icons\arrowRight.png" />
+    <None Remove="Icons\arrowUp.png" />
+    <None Remove="Icons\Comp2x.png" />
+    <None Remove="Icons\DocCamWhite2x.png" />
+    <None Remove="Icons\HDMIWhite2x.png" />
+    <None Remove="Icons\LocalPCWhite2x.png" />
+    <None Remove="Icons\VGAWhite2x.png" />
+    <None Remove="Icons\VGAWhiteTest.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="DBs\ControllerDB.xml" />
+    <EmbeddedResource Include="DBs\ProjectorDB.xml" />
+    <EmbeddedResource Include="DBs\Scheduler.xml" />
+    <EmbeddedResource Include="Icons\arrowDown.png" />
+    <EmbeddedResource Include="Icons\arrowLeft.png" />
+    <EmbeddedResource Include="Icons\arrowRight.png" />
+    <EmbeddedResource Include="Icons\arrowUp.png" />
+    <EmbeddedResource Include="Icons\Comp2x.png" />
+    <EmbeddedResource Include="Icons\DocCamWhite2x.png" />
+    <EmbeddedResource Include="Icons\HDMIWhite2x.png" />
+    <EmbeddedResource Include="Icons\LocalPCWhite2x.png" />
+    <EmbeddedResource Include="Icons\VGAWhite2x.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CarouselView.FormsPlugin" Version="5.2.0" />
+    <PackageReference Include="PCLStorage" Version="1.0.2" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.6.258-beta" />
+    <PackageReference Include="SSH.NET" Version="2016.1.0" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.6.0-preview3.19128.7" />
+    <PackageReference Include="Xamarin.Forms" Version="4.2.0.709249" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="DataSets\Classroom.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Classroom.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSets\SchedulerAddress.cs">
+      <DependentUpon>SchedulerAddress.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSets\SchedulerAddress.Designer.cs">
+      <DependentUpon>SchedulerAddress.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Pages\AliveTest\AliveTestFrame.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages\ControlHeader.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages\Controls\CameraControls.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages\Controls\ControlsFrame.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages\Controls\InfoControl.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages\Controls\LightControls.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages\Controls\MainControl.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages\Controls\MediaControl.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages\Controls\OtherControl.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages\Controls\VCControl.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages\EditDB\EditDBFrame.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages\EditDB\EditXMLEntryFrame.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="DataSets\Classroom.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Classroom.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="DataSets\SchedulerAddress.xsc">
+      <DependentUpon>SchedulerAddress.xsd</DependentUpon>
+    </None>
+    <None Update="DataSets\SchedulerAddress.xsd">
+      <SubType>Designer</SubType>
+      <LastGenOutput>SchedulerAddress.Designer.cs</LastGenOutput>
+      <Generator>MSDataSetGenerator</Generator>
+    </None>
+    <None Update="DataSets\SchedulerAddress.xss">
+      <DependentUpon>SchedulerAddress.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+</Project>

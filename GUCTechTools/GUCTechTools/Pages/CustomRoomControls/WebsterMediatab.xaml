@@ -1,0 +1,39 @@
+﻿<UserControl x:Class="GUCTechTools.Pages.CustomRoomControls.WebsterMediatab"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GUCTechTools.Pages.CustomRoomControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid x:Name="controlGrid">
+        <GroupBox Header="Left Media" HorizontalAlignment="Stretch" Height="110" VerticalAlignment="Top">
+            <Grid>
+                <Button Content="Local" HorizontalAlignment="Center" Margin="10,10,448,0" VerticalAlignment="Top" Height="57" Width="57" Tag="LeftComputer"/>
+                <Button Content="HDMI" HorizontalAlignment="Center" Margin="77,10,351,0" VerticalAlignment="Top" Height="57" Width="57" Tag="LeftHDMI"/>
+                <Button Content="VGA" HorizontalAlignment="Center" Margin="144,10,254,0" VerticalAlignment="Top" Height="57" Width="57" Tag="LeftLaptop"/>
+                <Button Content="Doc Cam" HorizontalAlignment="Center" Margin="211,10,157,0" VerticalAlignment="Top" Height="57" Width="57" Tag="LeftDocumentCamera"/>
+                <Button Content="AV" HorizontalAlignment="Center" Margin="278,10,60,0" VerticalAlignment="Top" Height="57" Width="57" Tag="LeftAV"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Right Media" HorizontalAlignment="Stretch" Height="110" Margin="0,115,0,0" VerticalAlignment="Top">
+            <Grid>
+                <Button Content="Local" HorizontalAlignment="Center" Margin="10,10,448,0" VerticalAlignment="Top" Height="57" Width="57" Tag="RightComputer"/>
+                <Button Content="HDMI" HorizontalAlignment="Center" Margin="77,10,351,0" VerticalAlignment="Top" Height="57" Width="57" Tag="RightHDMI"/>
+                <Button Content="VGA" HorizontalAlignment="Center" Margin="144,10,254,0" VerticalAlignment="Top" Height="57" Width="57" Tag="RightLaptop"/>
+                <Button Content="Doc Cam" HorizontalAlignment="Center" Margin="211,10,157,0" VerticalAlignment="Top" Height="57" Width="57" Tag="Right2ndDocumentCamera"/>
+                <Button Content="AV" HorizontalAlignment="Center" Margin="278,10,60,0" VerticalAlignment="Top" Height="57" Width="57" Tag="RightAV"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Center Media" HorizontalAlignment="Stretch" Height="110" Margin="0,230,0,0" VerticalAlignment="Top">
+            <Grid>
+                <Button Content="Local" HorizontalAlignment="Center" Margin="10,10,448,0" VerticalAlignment="Top" Height="57" Width="57" Tag="SingleComputer"/>
+                <Button Content="HDMI" HorizontalAlignment="Center" Margin="77,10,381,0" VerticalAlignment="Top" Height="57" Width="57" Tag="SingleHDMI"/>
+                <Button Content="VGA" HorizontalAlignment="Center" Margin="144,10,314,0" VerticalAlignment="Top" Height="57" Width="57" Tag="SingleLaptop"/>
+                <Button Content="Left Dc" HorizontalAlignment="Center" Margin="211,10,247,0" VerticalAlignment="Top" Height="57" Width="57" Tag="SingleDocumentCamera"/>
+                <Button Content="Right Dc" HorizontalAlignment="Center" Margin="278,10,180,0" VerticalAlignment="Top" Height="57" Width="57" Tag="Single2ndDocumentCamera"/>
+                <Button Content="AV" HorizontalAlignment="Center" Margin="345,10,113,0" VerticalAlignment="Top" Height="57" Width="57" Tag="SingleAV"/>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</UserControl>

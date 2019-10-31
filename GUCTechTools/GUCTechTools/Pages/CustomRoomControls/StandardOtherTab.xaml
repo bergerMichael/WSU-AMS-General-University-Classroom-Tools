@@ -1,0 +1,19 @@
+﻿<!--
+/// This is a sample of the GUCTech Tools developed by Michael Berger and Kyle Avery 
+/// At the Academic Media Services of Washington State University between May 2019 and 
+/// October 2019. All sensitive data has been removed. What remains is a demo of the
+/// project's functionality. Backend integration is not included in this sample.    
+    -->
+    
+    <UserControl x:Class="GUCTechTools.Pages.CustomRoomControls.StandardOtherTab"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GUCTechTools.Pages.CustomRoomControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid x:Name="controlGrid">
+            
+    </Grid>
+</UserControl>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+    <!--
+/// This is a sample of the GUCTech Tools developed by Michael Berger and Kyle Avery 
+/// At the Academic Media Services of Washington State University between May 2019 and 
+/// October 2019. All sensitive data has been removed. What remains is a demo of the
+/// project's functionality. Backend integration is not included in this sample.
+    -->    
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileGUCTechTool.Pages.AliveTest.AliveTestFrame"
+			 BackgroundColor="#FF2F2F2F"
+			 NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout x:Name="MainStack">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Alive:" TextColor="White" FontSize="20"/>
+                <Picker x:Name="alivePick" HorizontalOptions="FillAndExpand" TextColor="White"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Dead:" TextColor="White" FontSize="20"/>
+                <Picker x:Name="deadPick" HorizontalOptions="FillAndExpand" TextColor="White"/>
+            </StackLayout>
+            <Button x:Name="aliveTestButton" Text="Run Alive Test" Clicked="aliveTestButton_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

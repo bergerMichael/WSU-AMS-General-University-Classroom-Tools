@@ -1,0 +1,49 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="ControllerDB" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ControllerDB">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Building" type="xs:string" />
+                <xs:element name="Room" type="xs:string" />
+                <xs:element name="IP" type="xs:string" />
+                <xs:element name="UDP" type="xs:boolean" minOccurs="0" />
+                <xs:element name="LastChecked" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="Tag" type="xs:string" minOccurs="0" />
+                <xs:element name="Designation" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+      <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//ControllerDB" />
+        <xs:field xpath="IP" />
+      </xs:unique>
+    </xs:element>
+  </xs:schema>
+  <ControllerDB>
+    <Building>SampleBLDG1</Building>
+    <Room>1</Room>
+    <IP>1.2.3.4</IP>
+    <UDP>true</UDP>
+    <LastChecked>2019-07-01T11:10:52.7102799-07:00</LastChecked>
+  </ControllerDB>
+  <ControllerDB>
+    <Building>SampleBLDG1</Building>
+    <Room>2</Room>
+    <IP>5.6.7.8</IP>
+    <UDP>true</UDP>
+    <LastChecked>2019-07-01T11:10:52.7102799-07:00</LastChecked>
+  </ControllerDB>
+  <ControllerDB>
+    <Building>SampleBLDG2</Building>
+    <Room>1</Room>
+    <IP>10.20.30.40</IP>
+    <UDP>true</UDP>
+    <LastChecked>2019-07-01T11:10:52.7102799-07:00</LastChecked>
+  </ControllerDB>
+</NewDataSet>

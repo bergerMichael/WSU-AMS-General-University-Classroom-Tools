@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SchedulerAddress" targetNamespace="http://tempuri.org/SchedulerAddress.xsd" xmlns:mstns="http://tempuri.org/SchedulerAddress.xsd" xmlns="http://tempuri.org/SchedulerAddress.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SchedulerAddress" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SchedulerAddress" msprop:Generator_UserDSName="SchedulerAddress">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SchedulerIP" msprop:Generator_TableClassName="SchedulerIPDataTable" msprop:Generator_TableVarName="tableSchedulerIP" msprop:Generator_RowChangedName="SchedulerIPRowChanged" msprop:Generator_TablePropName="SchedulerIP" msprop:Generator_RowDeletingName="SchedulerIPRowDeleting" msprop:Generator_RowChangingName="SchedulerIPRowChanging" msprop:Generator_RowEvHandlerName="SchedulerIPRowChangeEventHandler" msprop:Generator_RowDeletedName="SchedulerIPRowDeleted" msprop:Generator_RowClassName="SchedulerIPRow" msprop:Generator_UserTableName="SchedulerIP" msprop:Generator_RowEvArgName="SchedulerIPRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IP" msprop:Generator_ColumnVarNameInTable="columnIP" msprop:Generator_ColumnPropNameInRow="IP" msprop:Generator_ColumnPropNameInTable="IPColumn" msprop:Generator_UserColumnName="IP" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SchedulerIP" />
+      <xs:field xpath="mstns:IP" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
